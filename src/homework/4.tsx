@@ -5,7 +5,7 @@ type MenuIds = "first" | "second" | "last";
 type Menu = { id: MenuIds; title: string };
 type SelectedMenu = { id: MenuIds } | object;
 type MenuSelected = {
-  selectedMenu: object;
+  selectedMenu: SelectedMenu;
 };
 type MenuAction = {
   onSelectedMenu: (obj: SelectedMenu) => void;
